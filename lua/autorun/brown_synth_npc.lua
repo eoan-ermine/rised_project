@@ -1,0 +1,3 @@
+-- "lua\\autorun\\brown_synth_npc.lua"
+-- Retrieved by https://github.com/lewisclark/glua-steal
+local Category = "Combine Synth"local NPC = { 	Name = "Desert Elite Synth(Ennemy)", 				Class = "npc_combine_s",				Model = "models/synth/elite_brown.mdl",				Numgrenades = "4",				Squadname = "squad",				Weapons = { "weapon_ar2" },				Category = Category	}list.Set( "NPC", "npc_synth_desert", NPC )

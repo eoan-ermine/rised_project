@@ -1,0 +1,15 @@
+-- "igs\\extensions\\pointshop2.lua"
+-- Retrieved by https://github.com/lewisclark/glua-steal
+local STORE_ITEM = FindMetaTable("IGSItem")
+
+function STORE_ITEM:SetPremiumPoints(iAmount)
+	return self:SetInstaller(function(pl)
+		pl:PS2_AddPremiumPoints(iAmount)
+	end):SetMeta("ps2_prempoints", iAmount)
+end
+
+function STORE_ITEM:SetPoints(iAmount)
+	return self:SetInstaller(function(pl)
+		pl:PS2_AddStandardPoints(iAmount, "/donate")
+	end):SetMeta("ps2_points", iAmount)
+end

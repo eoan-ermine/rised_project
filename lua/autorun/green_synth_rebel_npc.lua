@@ -1,0 +1,3 @@
+-- "lua\\autorun\\green_synth_rebel_npc.lua"
+-- Retrieved by https://github.com/lewisclark/glua-steal
+local Category = "Combine Synth"local NPC = { 	Name = "Green Elite Synth(Friendly)", 				Class = "npc_citizen",				Model = "models/synth/elite_green_rebel.mdl",				Health = "150",				KeyValues = { citizentype = 4 },				Weapons = { "weapon_ar2" },				Category = Category	}list.Set( "NPC", "npc_synth_green_rebel", NPC )
